@@ -12,6 +12,8 @@ Source0:        https://github.com/gauteh/%{srcname}/archive/v%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python3-devel python3-tqdm python3-google-api-client python3-oauth2client python3-notmuch notmuch-devel
 
+Requires: python3-tqdm python3-google-api-client python3-oauth2client python3-notmuch
+
 %description
 This program can pull email and labels (and changes to labels) from your GMail
 account and store them locally in a maildir with the labels synchronized with a
