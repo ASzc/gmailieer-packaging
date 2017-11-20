@@ -1,10 +1,9 @@
 %global srcname gmailieer
-%global sum Fast email-fetching and two-way tag synchronization between notmuch and GMail
 
 Name:           python3-%{srcname}
 Version:        0.4
 Release:        1%{?dist}
-Summary:        %{sum}
+Summary:        Fast email-fetching and two-way tag synchronization between notmuch and GMail
 
 License:        GPLv3+
 URL:            https://github.com/gauteh/%{srcname}
@@ -12,6 +11,8 @@ Source0:        https://github.com/gauteh/%{srcname}/archive/v%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python3-devel
+
+Requires:       python3-tqdm python3-google-api-client python3-oauth2client python3-notmuch
 
 %description
 This program can pull email and labels (and changes to labels) from your GMail
@@ -44,4 +45,5 @@ Gmailieer will not and can not:
 %{_bindir}/gmi
 
 %changelog
-
+* Mon Nov 20 2017 Alex Szczuczko <aszczucz@redhat.com> - 0.4-1
+- Initial package
