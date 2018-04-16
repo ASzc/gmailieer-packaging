@@ -1,7 +1,7 @@
 %global srcname gmailieer
 
 Name:           python3-%{srcname}
-Version:        0.4
+Version:        0.6
 Release:        1%{?dist}
 Summary:        Fast email-fetching and two-way tag synchronization between notmuch and GMail
 
@@ -45,5 +45,7 @@ Gmailieer will not and can not:
 %{_bindir}/gmi
 
 %changelog
+* Mon Apr 04 2018 Alex Szczuczko <aszczucz@redhat.com> - 0.6-1
+- Update to source version 0.6
 * Mon Nov 20 2017 Alex Szczuczko <aszczucz@redhat.com> - 0.4-1
 - Initial package
